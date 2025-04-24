@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/669nvEh.png"/>
 </p>
 
-![Release](https://img.shields.io/github/v/release/GregoBHM/CodacyDemoApp)
+![Release]
 ![.NET](https://img.shields.io/badge/.NET-8.0-blue)
 
 
