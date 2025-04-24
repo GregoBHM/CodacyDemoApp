@@ -10,15 +10,11 @@
 
 This is a simple .NET 8 project that demonstrates how to use **Codacy** as a Static Application Security Testing (SAST) tool.
 
----
-
 ## 📦 What’s Inside
 
 - `CodacyDemoApp/` → App with basic logic.
 - `CodacyDemoApp.Tests/` → Unit tests using `xUnit`.
 - `.github/workflows/codacy.yml` → GitHub Actions Codacy configuration file.
-
----
 
 ## 🛠️ Step-by-step Setup
 
@@ -55,8 +51,6 @@ namespace CodacyDemoApp.Models
 }
 ```
 
----
-
 ### 🔹 Create a unit test
 
 `CodacyDemoApp.Tests/UnitTest1.cs`
@@ -80,15 +74,11 @@ namespace CodacyDemoApp.Tests
 }
 ```
 
----
-
 ### 🔹 Run tests with coverage
 
 ```bash
 dotnet test CodacyDemoApp.Tests/CodacyDemoApp.Tests.csproj --collect:"XPlat Code Coverage"
 ```
-
----
 
 ### 🔹 Generate coverage report for Codacy
 
@@ -97,14 +87,11 @@ dotnet tool install --global dotnet-reportgenerator-globaltool
 reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coverage-report -reporttypes:Cobertura
 ```
 
----
 
 ## 🤖 GitHub Actions Workflow
 
 This repository includes a pre-configured GitHub Actions workflow for Codacy:  
 📂 `.github/workflows/codacy.yml`
-
----
 
 ---
 
